@@ -1,13 +1,13 @@
 body {
-  background-color: #dddddd;
 }
 
 div.container {
-  background-color: #ffffff;
+  background-color: #000000;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
+    "hero"
     "about"
     "event"
     "signup"
@@ -15,12 +15,17 @@ div.container {
 
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 1100px;
 }
 
 header {
-  background-color: #99ffff;
+  background-color: #99ff99;
+  font-family: cursive;
+  font-size: 30px;
   grid-area: header;
+  padding: 3px;
+  text: #000000;
+  text-align: center;
 }
 
 main {
@@ -28,27 +33,51 @@ main {
 }
 
 section {
-    min-height: 300px;
+    /*min-height: 300px;*/
+}
+
+section#hero {
+  grid-area: hero;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 section#about {
-  background-color: #9999ff;
+  background-color: #D7CEE3;
+  font-family: cursive;
+  font-size: 20px;
   grid-area: about;
+  padding: 10px;
+  text-align: center;
 }
 
 section#event {
-  background-color: #99ff99;
+  background-color: #ffba0c;
+  font-family: cursive;
+  font-size: 20px;
   grid-area: event;
+  padding: 10px;
+  text-align: center;
 }
 
 section#signup {
   background-color: #ff9999;
+  font-family: cursive;
   grid-area: signup;
+  padding: 10px;
+  text-align: center;
 }
 
 footer {
-  background-color: #ffff99;
+  background-color: #99ff99;
+  font-family: cursive;
+  font-size: 15px;
   grid-area: footer;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -56,8 +85,70 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header header"
-      "event event"
-      "about signup"
+      "hero   hero"
+      "about  about"
+      "event  signup"
       "footer footer";
+  }
+
+  header {
+    background-color: #99ff99;
+    font-family: cursive;
+    font-size: 30px;
+    grid-area: header;
+    padding: 3px;
+    text: #000000;
+    text-align: center;
+  }
+
+  main {
+
+  }
+
+  section {
+      min-height: 300px;
+  }
+
+  section#hero {
+    grid-area: hero;
+  }
+
+  section#about {
+    background-color: #d7cee3;
+    font-family: cursive;
+    font-size: 22px;
+    grid-area: about;
+    line-height: 1.6;
+    padding: 10px;
+    text-align: center;
+  }
+
+  section#event {
+    background-color: #ffba0c;
+    font-family: cursive;
+    font-size: 20px;
+    grid-area: event;
+    line-height: 1.6;
+    padding: 10px;
+    text-align: center;
+  }
+
+  section#signup {
+    background-color: #ff9999;
+    font-family: cursive;
+    grid-area: signup;
+    padding: 10px;
+  }
+
+  footer {
+    background-color: #99ff99;
+    font-family: cursive;
+    font-size: 15px;
+    grid-area: footer;
+    text-align: center;
+  }
+
+  img{
+    max-width: 100%;
   }
 }

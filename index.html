@@ -2,33 +2,185 @@
 
 <html>
 <head>
-  <title>Simple Grid Layout</title>
+  <title>Bella's Bumbas</title>
   <link href="main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-
+<body background="iamges/bumba.jpg">
   <div class="container">
 
     <header>
-      This is the header area
+      <h1>Bella's Bumbas</h1>
     </header>
 
+    <section id="hero">
+      <img class="hero" src="images/bella-family.jpg" alt"Shorr family">
+    </section>
+
     <section id="about">
-      This is where I put info about the charity.
+      <p><i>Bella’s Bumbas is a movement that helps kids with mobile disabilities.
+      This was created by Isabella Shorr’s family after Isabella was born and
+      diagnosed with spina bifida. Spina Bifida is a condition where your spine
+      is on the outside of your body, which can cause paralysis of the lower
+      limbs, and sometimes mental handicap. Isabella is currently paralyzed from
+      knees down, but with Bella’s Bumbas, she is able to move around and have
+      freedom. Bella’s Bumbas are wheelchairs for children with spina bifida,
+      and it works just like a wheelchair. It also has a seat-belt and a brake.
+      For more information you can visit their
+      <b><a href="https://www.facebook.com/groups/1807349199531390/v"> facebook
+      page</a></b></i></p>
     </section>
 
     <section id="event">
-      This is where I put info about the event.
+      The date auction is open for anyone who is <b>18+ for $5</b>. To enter to
+      be auctioned, you must be <b>18 or older</b> to enter with a
+      <b>$10 fee</b>. The deadline to enter is <b>January 12, 2018!</b> Keep in
+      mind that <b>all profit goes towards Bella’s Bumbas</b>. The event is at
+      <b>12:00pm on February 2, 2018 at the Bon Secours Wellness Arena
+      (650 N Academy St, Greenville, SC 29601) and will end at 4:00pm</b>.
+      Starting at 12:00, each person/family who signed up to be auctioned will
+      have 5 minutes on stage to say something they want to say about themselves
+      and for people in the audience to bid. If there are multiple high bids for
+      one person, that person may be auctioned off again for a second date.
+      After the auction, the person who bought the date, and the date
+      him/her/themselves will meet to plan out when they want to meet again.
+      Donations will be accepted at the front door when entering and exiting,
+      but the $5 fee is mandatory to enter. <b>With every paid admission, you
+      will receive a free t-shirt.</b>
     </section>
 
     <section id="signup">
-      This is where I put a signup form.
+      <h1>Sign Up To Attend The Date Auction Here! Tickets Are Also Available
+      At The Door On February 2nd, 2018!</h1>
+
+      <form action="thanks.html" method="post">
+        <fieldset>
+          <b><legend>Mandatory Information</legend></b>
+            <label for="name">Name:</label>
+              <input id="name" type="text" name="name"><br>
+            <label for="address">Address:</label>
+              <input id="address" type="text" name="address"><br>
+            <label for="city">City:</label>
+              <input id="city" type="text" name="city">
+                <br>
+            <label for="state">State:</label>
+              <select>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            <label for="zip">Zip:</label>
+              <input id="zip" type="text" name="zip" size="5"><br>
+        </fieldset>
+
+          <br>
+
+        <fieldset>
+          <b><legend>Ticket Information</legend></b>
+            <label for="quantity">Quantity</label>
+              <input type="text" name"quantity" size="4">
+            <label for="donation">Donation (optional)</label>
+              <input type="text" name"donation" size="5">
+        </fieldset>
+
+          <br>
+
+        <fieldset>
+
+          <b><legend>T-Shirt Information</legend></b>
+            <label for="size">Size:</label>
+              <select id="size" name="size">
+                <option value="" selected="selected">Select One</option>
+                <option value="x-small">XSmall</option>
+                <option value="small" >Small</option>
+                <option value="medium" >Medium</option>
+                <option value="large" >Large</option>
+                <option value="x-large">XLarge</option>
+                <option value="xx-large">XXLarge</optoin>
+              </select>
+
+            <label for="quantity">Quantity:</label>
+             <input type="text" name"quantity" size="5">
+          </fieldset>
+
+            <br>
+
+          <fieldset>
+            <b><legend>Payment Information</legend></b>
+                <label>Card:
+                  <input id="visa" type="radio" name="card_type" value="Visa">
+                    <label for="visa">Visa</label>
+                  <input type="radio" name="card_type" value="Master Card">
+                    <label for="mc">Master Card</label>
+                  <input type="radio" name="card_type" value="Discover">
+                    <label for="disc">Discover</label>
+                  <input type="radio" name="card_type" value="Paypal">
+                    <label for="disc">Paypal</label>
+                </label>
+
+              <br>
+
+                <label for="cc_number">Card Number (if a credit card was selected):</label>
+                <input id="cc_number" type="text" name="cc_number" size="16"></input>
+          </fieldset>
+            <br>
+
+          <input type="submit" value="Place Order">
+        </form>
     </section>
 
     <footer>
-      This is the footer area
+      <b><i>This website is fictional and only provides information about Bella's
+      Bumbas, it does not make real donations towards the cause</i></b>
     </footer>
 
   </div>
