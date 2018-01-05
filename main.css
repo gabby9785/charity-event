@@ -9,6 +9,7 @@ div.container {
     "header"
     "hero"
     "about"
+    "list"
     "event"
     "signup"
     "footer";
@@ -20,7 +21,7 @@ div.container {
 
 header {
   background-color: #99ff99;
-  font-family: cursive;
+  font-family: 'Indie Flower', cursive;
   font-size: 30px;
   grid-area: header;
   padding: 3px;
@@ -44,17 +45,26 @@ section#hero {
 
 section#about {
   background-color: #D7CEE3;
-  font-family: cursive;
+  font-family: 'Indie Flower', cursive;
   font-size: 20px;
   grid-area: about;
   padding: 10px;
   text-align: center;
 }
 
-section#event {
-  background-color: #ffba0c;
-  font-family: cursive;
+section#list{
+  background-color: #f6ff00;
+  font-family: 'Indie Flower', cursive;
   font-size: 20px;
+  grid-area: list;
+  padding: 10px;
+  text-align: center;
+}
+
+section#event {
+  background-color: #99ff99;
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
   grid-area: event;
   padding: 10px;
   text-align: center;
@@ -62,15 +72,15 @@ section#event {
 
 section#signup {
   background-color: #ff9999;
-  font-family: cursive;
+  font-family: 'Indie Flower', cursive;
   grid-area: signup;
   padding: 10px;
   text-align: center;
 }
 
 footer {
-  background-color: #99ff99;
-  font-family: cursive;
+  background-color: #ffba0c;
+  font-family: 'Indie Flower', cursive;
   font-size: 15px;
   grid-area: footer;
   text-align: center;
@@ -86,15 +96,15 @@ img{
     grid-template-areas:
       "header header"
       "hero   hero"
-      "about  about"
+      "about  list"
       "event  signup"
       "footer footer";
   }
 
   header {
     background-color: #99ff99;
-    font-family: cursive;
-    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
     grid-area: header;
     padding: 3px;
     text: #000000;
@@ -115,17 +125,26 @@ img{
 
   section#about {
     background-color: #d7cee3;
-    font-family: cursive;
-    font-size: 22px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
     grid-area: about;
     line-height: 1.6;
     padding: 10px;
     text-align: center;
   }
 
+  section#list{
+    background-color: #f6ff00;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20ox;
+    grid-area: list;
+    padding: 10px;
+    text-align: center;
+  }
+
   section#event {
-    background-color: #ffba0c;
-    font-family: cursive;
+    background-color: #99ff99;
+    font-family: 'Indie Flower', cursive;
     font-size: 20px;
     grid-area: event;
     line-height: 1.6;
@@ -135,14 +154,15 @@ img{
 
   section#signup {
     background-color: #ff9999;
-    font-family: cursive;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
     grid-area: signup;
     padding: 10px;
   }
 
   footer {
-    background-color: #99ff99;
-    font-family: cursive;
+    background-color: #ffba0c;
+    font-family: 'Indie Flower', cursive;
     font-size: 15px;
     grid-area: footer;
     text-align: center;
